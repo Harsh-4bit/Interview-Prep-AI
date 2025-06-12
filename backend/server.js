@@ -12,10 +12,14 @@ import { protect } from "./middlewares/authMiddleware.js";
 import { generateInterviewQuestions, generateConceptExplanation } from "./controllers/aiController.js";
 
 
+const allowedOrigins = [
+  "https://interview-prep-ai-heq4.vercel.app", 
+];
+
 const app = express(); 
 app.use(
     cors({
-        origin: "*",
+        origin: allowedOrigins,
         methods: ["GET", "PUT", "POST", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
