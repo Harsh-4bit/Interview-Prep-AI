@@ -1,4 +1,4 @@
-const BASE_URL = "https://interview-prep-ai-j0wf.onrender.com";
+export const BASE_URL = "https://interview-prep-ai-j0wf.onrender.com";
 
 export const API_PATHS = {
     AUTH: {
@@ -29,3 +29,4 @@ export const API_PATHS = {
         UPDATE_NOTE: (id) => `/api/questions/${id}/note`,
     },
 }
+
