@@ -19,7 +19,7 @@ const allowedOrigins = [
 const app = express(); 
 app.use(
     cors({
-        origin: allowedOrigins,
+        origin: "*",
         methods: ["GET", "PUT", "POST", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
